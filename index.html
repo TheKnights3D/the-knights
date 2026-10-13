@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skys Prints — 3D Printing at $10/hour</title>
+<meta name="description" content="Custom 3D printing by Skys Prints. Simple pricing: $10 per hour of print time.">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--text:#e6edf3;--muted:#9da7b3;--accent:#38bdf8;--accent2:#a78bfa}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent)}.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;color:#000;padding:8px;z-index:9}
+header{position:sticky;top:0;background:rgba(13,17,23,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;flex-wrap:wrap;gap:10px}
+.logo{font-weight:800;font-size:1.25rem;color:var(--text);text-decoration:none}.logo span{color:var(--accent)}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}nav ul a{color:var(--muted);text-decoration:none}nav ul a:hover{color:var(--text)}
+.hero{padding:90px 0 70px;text-align:center;background:radial-gradient(ellipse at top,rgba(56,189,248,.18),transparent 60%)}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);margin:0 0 12px;line-height:1.1}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:620px;margin:0 auto 28px}
+.btn{display:inline-block;background:var(--accent);color:#04121c;font-weight:700;padding:12px 24px;border-radius:10px;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+.btn.alt{background:transparent;color:var(--text);border:1px solid var(--line);margin-left:10px}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.price-tag{display:inline-block;margin-bottom:20px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;color:var(--accent)}
+section{padding:70px 0}h2{font-size:2rem;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 32px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.num{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04121c;font-weight:800;display:grid;place-items:center;margin-bottom:12px}
+.card h3{margin:0 0 6px}.card p{margin:0;color:var(--muted)}
+.est{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+label{display:block;font-weight:600;margin-bottom:6px}
+input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#0d1117;color:var(--text);font:inherit}
+.row{display:flex;gap:14px}.row>div{flex:1}
+.total{font-size:3rem;font-weight:800}.note{font-size:.9rem;color:var(--muted)}
+.ph{aspect-ratio:4/3;border-radius:14px;border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);text-align:center;padding:10px;
+background:repeating-linear-gradient(45deg,#161b22 0 12px,#1b222c 12px 24px)}
+.ph svg{width:48px;height:48px;opacity:.6}
+.gi{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}.gimg{position:relative;aspect-ratio:16/10}.gimg img{width:100%;height:100%;object-fit:cover;display:block}.badge{position:absolute;top:10px;left:10px;background:rgba(0,0,0,.75);color:#fff;font-size:.8rem;font-weight:700;padding:4px 10px;border-radius:99px;border:1px solid rgba(255,255,255,.4)}.gi figcaption{padding:12px 16px;font-weight:600}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:10px 0 0}
+form .f{margin-bottom:16px}footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);text-align:center}
+@media(max-width:720px){.est{grid-template-columns:1fr}.btn.alt{margin:10px 0 0}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><nav aria-label="Main"><a class="logo" href="#">Skys <span>Prints</span></a>
+<ul><li><a href="#how">How it works</a></li><li><a href="#estimate">Estimate</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#faq">FAQ</a></li><li><a href="#request">Request</a></li></ul></nav></div></header>
+<main id="main">
+<section class="hero"><div class="wrap">
+<div class="price-tag">$10 / hour of print time · PLA included</div>
+<h1>Your ideas, <span class="grad">printed in 3D.</span></h1>
+<p>Skys Prints turns your models into real objects. Simple, honest pricing: you pay $10 for every hour your part spends on the printer, with standard PLA filament included. Free local pickup in Murray, UT; shipping quoted separately.</p>
+<a class="btn" href="#request">Request a print</a><a class="btn alt" href="#estimate">Estimate cost</a>
+</div></section>
+
+<section id="how"><div class="wrap"><h2>How it works</h2><p class="sub">Four simple steps from file to finished part.</p>
+<div class="grid">
+<div class="card"><div class="num">1</div><h3>Send your model</h3><p>Share a file link (STL, 3MF, OBJ) or describe what you need.</p></div>
+<div class="card"><div class="num">2</div><h3>Get a quote</h3><p>We slice it and tell you the exact print hours and price.</p></div>
+<div class="card"><div class="num">3</div><h3>We print it</h3><p>Once you approve, your part goes on the printer.</p></div>
+<div class="card"><div class="num">4</div><h3>Pickup or ship</h3><p>Free local pickup in Murray, UT, or we ship it to you (shipping quoted separately). The exact pickup address is emailed after your order is confirmed.</p></div>
+</div></div></section>
+
+<section id="estimate"><div class="wrap"><h2>Price estimator</h2><p class="sub">Enter estimated print time to see your cost at $10/hour.</p>
+<div class="card est">
+<div><div class="row"><div><label for="hrs">Hours</label><input id="hrs" type="number" min="0" value="3" inputmode="numeric"></div>
+<div><label for="mins">Minutes</label><input id="mins" type="number" min="0" max="59" value="30" inputmode="numeric"></div></div></div>
+<div aria-live="polite"><div class="note">Estimated print cost</div><div class="total" id="total">$35.00</div>
+<p class="note">Includes standard PLA filament. Free local pickup in Murray, UT; shipping is extra and quoted separately. Final price is based on our sliced print time.</p></div>
+</div></div></section>
+
+<section id="gallery"><div class="wrap"><h2>Gallery</h2><p class="sub">Example prints. Real photos of our work coming soon.</p>
+<div class="grid" id="gal"></div></div></section>
+
+<section id="faq"><div class="wrap"><h2>FAQ</h2><p class="sub">Common questions.</p>
+<details><summary>How is the price calculated?</summary><p>$10 per hour of print time, based on the slicer estimate we share with you before printing. Standard PLA filament is included in that rate.</p></details>
+<details><summary>What files do you accept?</summary><p>STL, 3MF, and OBJ work best. No file? Describe your idea and we'll talk options.</p></details>
+<details><summary>What materials can you print?</summary><p>Standard PLA is included in the $10/hour rate. Ask in your request if you need a specific color.</p></details>
+<details><summary>How long does it take?</summary><p>Depends on print time and the queue. We'll give you an estimated ready date with your quote.</p></details>
+<details><summary>Do you ship?</summary><p>Yes. Local pickup in Murray, UT is free. Shipping is extra and quoted separately based on size and destination. The exact pickup address in Murray, UT is emailed after your order is confirmed.</p></details>
+</div></section>
+
+<section id="request"><div class="wrap"><h2>Request a print</h2><p class="sub">Submitting opens your email app with the details filled in.</p>
+<form class="card" id="form" novalidate>
+<div class="f"><label for="name">Name</label><input id="name" required autocomplete="name"></div>
+<div class="f"><label for="email">Email</label><input id="email" type="email" required autocomplete="email"></div>
+<div class="f"><label for="model">File link or description</label><textarea id="model" rows="3" required></textarea></div>
+<div class="f"><label for="notes">Notes (color, quantity, deadline)</label><textarea id="notes" rows="3"></textarea></div>
+<p id="err" role="alert" style="color:#f87171"></p>
+<button class="btn" type="submit">Send request</button>
+<p class="note">Or email us directly: <a href="mailto:yourboyskys@gmail.com">yourboyskys@gmail.com</a></p>
+</form></div></section>
+</main>
+<footer>&copy; <span id="yr"></span> Skys Prints · $10/hour 3D printing · Murray, UT · Free local pickup, shipping quoted separately</footer>
+<script>
+const CONTACT_EMAIL="yourboyskys@gmail.com",RATE=10;
+const h=document.getElementById('hrs'),m=document.getElementById('mins'),t=document.getElementById('total');
+function calc(){const x=Math.max(0,+h.value||0)+Math.max(0,+m.value||0)/60;t.textContent='$'+(x*RATE).toFixed(2)}
+h.oninput=m.oninput=calc;calc();
+const items=[["dragon","Articulated dragon"],["planter","Geometric planter"],["phone-stand","Phone stand"],["miniature","Tabletop knight miniature"],["gear","Gears &amp; bracket"],["helmet","Cosplay helmet piece"]];
+const g=document.getElementById('gal');g.innerHTML=items.map(([f,c])=>`<figure class="gi"><div class="gimg"><img src="images/${f}.jpg" alt="Example PLA 3D print: ${c}" loading="lazy"><span class="badge">Example</span></div><figcaption>${c}</figcaption></figure>`).join('');
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('form').onsubmit=e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();
+if(!v('name')||!/^\S+@\S+\.\S+$/.test(v('email'))||!v('model')){document.getElementById('err').textContent='Please fill in your name, a valid email, and a file link or description.';return}
+document.getElementById('err').textContent='';
+const body=`Name: ${v('name')}\nEmail: ${v('email')}\n\nModel (link/description):\n${v('model')}\n\nNotes:\n${v('notes')}`;
+location.href=`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Print request from '+v('name'))}&body=${encodeURIComponent(body)}`};
+</script></body></html>
