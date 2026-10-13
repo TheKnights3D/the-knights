@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Skys Prints — 3D Printing at $10/hour</title>
-<meta name="description" content="Custom 3D printing by Skys Prints. Simple pricing: $10 per hour of print time.">
+<meta name="description" content="Custom 3D printing by Skys Prints. $2 for prints up to 90 minutes, $10 per hour after that.">
 <style>
 :root{--bg:#0d1117;--card:#161b22;--line:#30363d;--text:#e6edf3;--muted:#9da7b3;--accent:#38bdf8;--accent2:#a78bfa}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
@@ -43,7 +43,7 @@ form .f{margin-bottom:16px}footer{border-top:1px solid var(--line);padding:30px 
 <ul><li><a href="#how">How it works</a></li><li><a href="#estimate">Estimate</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#faq">FAQ</a></li><li><a href="#request">Request</a></li></ul></nav></div></header>
 <main id="main">
 <section class="hero"><div class="wrap">
-<div class="price-tag">$10 / hour of print time · PLA included</div>
+<div class="price-tag">$2 for prints up to 90 min · $10/hour after · PLA included</div>
 <h1>Your ideas, <span class="grad">printed in 3D.</span></h1>
 <p>Skys Prints turns your models into real objects. Simple, honest pricing: you pay $10 for every hour your part spends on the printer, with standard PLA filament included. Free local pickup in Murray, UT; shipping quoted separately.</p>
 <a class="btn" href="#request">Request a print</a><a class="btn alt" href="#estimate">Estimate cost</a>
@@ -57,7 +57,7 @@ form .f{margin-bottom:16px}footer{border-top:1px solid var(--line);padding:30px 
 <div class="card"><div class="num">4</div><h3>Pickup or ship</h3><p>Free local pickup in Murray, UT, or we ship it to you (shipping quoted separately). The exact pickup address is emailed after your order is confirmed.</p></div>
 </div></div></section>
 
-<section id="estimate"><div class="wrap"><h2>Price estimator</h2><p class="sub">Enter estimated print time to see your cost at $10/hour.</p>
+<section id="estimate"><div class="wrap"><h2>Price estimator</h2><p class="sub">Enter estimated print time to see your cost. Prints up to 90 minutes are a flat $2; longer prints are $10/hour.</p>
 <div class="card est">
 <div><div class="row"><div><label for="hrs">Hours</label><input id="hrs" type="number" min="0" value="3" inputmode="numeric"></div>
 <div><label for="mins">Minutes</label><input id="mins" type="number" min="0" max="59" value="30" inputmode="numeric"></div></div></div>
@@ -69,7 +69,7 @@ form .f{margin-bottom:16px}footer{border-top:1px solid var(--line);padding:30px 
 <div class="grid" id="gal"></div></div></section>
 
 <section id="faq"><div class="wrap"><h2>FAQ</h2><p class="sub">Common questions.</p>
-<details><summary>How is the price calculated?</summary><p>$10 per hour of print time, based on the slicer estimate we share with you before printing. Standard PLA filament is included in that rate.</p></details>
+<details><summary>How is the price calculated?</summary><p>Prints up to 90 minutes are a flat $2. Longer prints are $10 per hour of print time, based on the slicer estimate we share with you before printing. Standard PLA filament is included in that rate.</p></details>
 <details><summary>What files do you accept?</summary><p>STL, 3MF, and OBJ work best. No file? Describe your idea and we'll talk options.</p></details>
 <details><summary>What materials can you print?</summary><p>Standard PLA is included in the $10/hour rate. Ask in your request if you need a specific color.</p></details>
 <details><summary>How long does it take?</summary><p>Depends on print time and the queue. We'll give you an estimated ready date with your quote.</p></details>
@@ -91,7 +91,7 @@ form .f{margin-bottom:16px}footer{border-top:1px solid var(--line);padding:30px 
 <script>
 const CONTACT_EMAIL="yourboyskys@gmail.com",RATE=10;
 const h=document.getElementById('hrs'),m=document.getElementById('mins'),t=document.getElementById('total');
-function calc(){const x=Math.max(0,+h.value||0)+Math.max(0,+m.value||0)/60;t.textContent='$'+(x*RATE).toFixed(2)}
+function calc(){const x=Math.max(0,+h.value||0)+Math.max(0,+m.value||0)/60;const mins=x*60;t.textContent='$'+(mins<=0?0:mins<=90?2:x*RATE).toFixed(2)}
 h.oninput=m.oninput=calc;calc();
 const items=[["dragon","Articulated dragon"],["planter","Geometric planter"],["phone-stand","Phone stand"],["miniature","Tabletop knight miniature"],["gear","Gears &amp; bracket"],["helmet","Cosplay helmet piece"]];
 const g=document.getElementById('gal');g.innerHTML=items.map(([f,c])=>`<figure class="gi"><div class="gimg"><img src="images/${f}.jpg" alt="Example PLA 3D print: ${c}" loading="lazy"><span class="badge">Example</span></div><figcaption>${c}</figcaption></figure>`).join('');
