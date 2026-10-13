@@ -1,0 +1,1 @@
+Voiceover: Kokoro v1.0 (kokoro-onnx, local neural TTS), voice am_michael, speed 1.0
